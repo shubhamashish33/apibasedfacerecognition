@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #041C32;
+            color: white
+        }
+
+        canvas {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- http://localhost:3000 -->
+    <h1> 
+        Face Detection in a Multimodal Background for Missing People
+    </h1>
+    <video id="videoInput" width="720" height="550" muted controls>
+        <p id="report">Report</p>
+
+        <script defer async src="./js/face-api.min.js"></script>
+        <script defer async src="./js/script.js"></script>
+        <!-- <script defer async src="../src/app.js"></script> -->
+</body>
+
+</html>
